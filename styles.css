@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1.8rem 5rem;
+  font-family: 'Lato', sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border-bottom: 1px solid #b1b1b1;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  color: rgb(32, 32, 32);
+}
+
+tr {
+  font-size: 1.3rem;
+  color: rgb(90, 90, 90);
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+  color: rgb(32, 32, 32);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: rgb(90, 90, 90);
+  text-decoration: underline;
+}
+
+.band-description-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 'band-description band-image';
+  gap: 1.5rem;
+}
+
+.band-description {
+  grid-area: band-description;
+}
+
+.brand-description-image {
+  grid-area: band-image;
+  text-align: center;
+}
+
+.brand-description-image img {
+  width: 20rem;
+  border-radius: 50%;
+}
+
+.band-description-title,
+.music-title,
+.members-title,
+.main-title {
+  font-size: 2.2rem;
+  color: rgb(32, 32, 32);
+}
+
+.band-description-text,
+li {
+  font-size: 1.7rem;
+  color: rgb(82, 82, 82);
+}
